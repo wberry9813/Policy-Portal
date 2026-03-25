@@ -1,16 +1,141 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>LentiLab 隐私政策</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.75}a{color:#0a84ff;text-decoration:none}a:hover{text-decoration:underline}.foot a{margin-right:12px}</style></head><body>
-<h1>LentiLab 隐私政策</h1>
-<p>生效日期：2026-03-25</p>
-<h2>1. 我们处理的数据</h2>
-<p>LentiLab 主要在设备本地处理用户导入的素材与效果参数，用于预览、渲染与导出。</p>
-<h2>2. 数据存储</h2>
-<p>卡片资源与配置存储在本地 App 沙盒中。付费权益通过 Apple StoreKit 校验。</p>
-<h2>3. 数据共享</h2>
-<p>我们不会出售个人数据。仅在用户主动执行导出/分享时，内容才会被用户选择性对外发送。</p>
-<h2>4. 第三方服务</h2>
-<p>内购与权益依赖 Apple App Store / StoreKit 服务。</p>
-<h2>5. 联系方式</h2>
-<ul><li>GitHub：<a href="https://github.com/dmercc">github.com/dmercc</a></li><li>小红书：@Dmer</li><li>审核核验请通过 App Store Connect 审核消息线程联系。</li></ul>
-<div class="foot"><a href="privacy.html">Privacy (EN)</a><a href="terms-zh.html">服务协议</a><a href="review-ownership-zh.html">权属声明</a></div>
-</body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LentiLab - 隐私政策</title>
+    <style>
+        :root {
+            --bg-color: #f2f5fb;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --glass-bg: rgba(255, 255, 255, 0.78);
+            --glass-border: rgba(255, 255, 255, 0.96);
+            --accent-color: #0ea5a4;
+        }
+        body {
+            margin: 0;
+            padding: 24px;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 18% 20%, rgba(14, 165, 164, 0.14), transparent 40%),
+                radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.12), transparent 45%),
+                linear-gradient(180deg, #f8fbff, #eef2f7);
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.7;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+        .glass-container {
+            margin: 18px 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 34px 28px;
+            max-width: 860px;
+            width: 100%;
+            box-shadow: 0 16px 44px rgba(15, 23, 42, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1);
+        }
+        h1 { font-size: 34px; margin: 0; letter-spacing: -0.02em; }
+        .subtitle { margin-top: 8px; color: var(--text-secondary); font-size: 15px; }
+        .tag {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #0f766e;
+            background: rgba(20, 184, 166, 0.12);
+            border: 1px solid rgba(20, 184, 166, 0.25);
+            border-radius: 999px;
+            padding: 5px 10px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+            padding-bottom: 8px;
+        }
+        p, li { font-size: 15px; color: #374151; }
+        ul { padding-left: 20px; margin-top: 10px; }
+        .footer { margin-top: 34px; font-size: 13px; color: var(--text-secondary); }
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+        @media (max-width: 680px) {
+            body { padding: 12px; }
+            .glass-container { padding: 24px 18px; border-radius: 18px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>LentiLab 隐私政策</h1>
+        <div class="subtitle">生效日期：2026年3月25日</div>
+        <div class="tag">已包含 App Store 审核参考信息（5.1.1 + 5.1.2 + 5.2.1）</div>
+
+        <h2>1. 数据处理概览</h2>
+        <p>
+            LentiLab 采用本地优先的创作模式。素材处理、参数调节、预览生成与大部分渲染流程在设备本地完成。
+        </p>
+
+        <h2>2. 我们处理的数据类型</h2>
+        <ul>
+            <li>用户主动导入的素材文件（图片/视频）</li>
+            <li>项目配置数据（特效参数、卡片设置、布局选项）</li>
+            <li>用户主动生成的输出内容（卡片、预览、导出文件）</li>
+        </ul>
+        <p>
+            我们不会以独立服务器画像为目的主动采集个人身份信息。
+        </p>
+
+        <h2>3. 存储与保留</h2>
+        <p>
+            项目与卡片数据保存在应用沙盒内。数据保留时间取决于用户删除操作、应用卸载或系统级清理行为。
+        </p>
+        <p>
+            若你的 Apple 账户开启系统备份/恢复机制，应用数据可能按 Apple 平台规则被纳入备份。
+        </p>
+
+        <h2>4. 分享与导出</h2>
+        <p>
+            LentiLab 不会自动对外发布你的内容。仅当你主动触发导出/分享时，内容才会被发送到你选择的目标。
+        </p>
+
+        <h2>5. 内购与 Apple 服务</h2>
+        <p>
+            购买校验与权益状态依赖 Apple StoreKit / App Store 基础设施。支付与账单信息由 Apple 处理，而非由
+            LentiLab 自建支付服务器处理。
+        </p>
+
+        <h2>6. 知识产权与权属说明</h2>
+        <p>
+            LentiLab 的产品标识、界面资源、法务页面与应用实现由发布者在对应 Apple Developer 账号下独立创作与维护。
+        </p>
+
+        <h2>7. 联系方式</h2>
+        <p>
+            如需法务/隐私咨询或审核核验，请优先通过 App Store Connect 审核消息线程联系。
+        </p>
+        <p>
+            仓库参考：<a href="https://github.com/wberry9813/Policy-Portal">github.com/wberry9813/Policy-Portal</a>
+        </p>
+
+        <div class="footer">
+            &copy; 2026 LentiLab. 保留所有权利。<br>
+            <a href="terms-zh.html">服务协议</a>
+            <a href="privacy.html">Privacy Policy (EN)</a>
+            <a href="review-ownership-zh.html">权属声明（审核专用）</a>
+            <a href="../index.html">Portal 首页</a>
+        </div>
+    </div>
+</body>
+</html>

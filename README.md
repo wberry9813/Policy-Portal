@@ -1,6 +1,6 @@
 # Policy-Portal
 
-Shared legal and review documents for multiple apps.
+Shared legal and App Review documents for multiple apps.
 
 ## Current apps
 - LentiLab: `docs/lentilab/`
@@ -12,3 +12,6 @@ Shared legal and review documents for multiple apps.
 - Terms (ZH): `docs/lentilab/terms-zh.html`
 - Ownership (EN): `docs/lentilab/review-ownership.html`
 - Ownership (ZH): `docs/lentilab/review-ownership-zh.html`
+
+## Hosted site
+- https://wberry9813.github.io/Policy-Portal/

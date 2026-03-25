@@ -1,16 +1,147 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>LentiLab Privacy Policy</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.65}a{color:#0a84ff;text-decoration:none}a:hover{text-decoration:underline}.foot a{margin-right:12px}</style></head><body>
-<h1>LentiLab Privacy Policy</h1>
-<p>Effective date: 2026-03-25</p>
-<h2>1. Data We Process</h2>
-<p>LentiLab processes user-created media and related effect settings locally on device for rendering and export.</p>
-<h2>2. Data Storage</h2>
-<p>Project assets and generated cards are stored locally on your device app container. In-app purchase entitlement state is validated through Apple StoreKit.</p>
-<h2>3. Data Sharing</h2>
-<p>We do not sell personal data. User-generated exports are only shared when users explicitly invoke share/export actions.</p>
-<h2>4. Third-Party Services</h2>
-<p>Purchase and entitlement flows rely on Apple StoreKit/App Store infrastructure.</p>
-<h2>5. Contact</h2>
-<ul><li>GitHub: <a href="https://github.com/dmercc">github.com/dmercc</a></li><li>Xiaohongshu: @Dmer</li><li>For App Review verification, please use the App Store Connect review message thread.</li></ul>
-<div class="foot"><a href="privacy-zh.html">中文隐私政策</a><a href="terms.html">Terms</a><a href="review-ownership.html">Ownership Statement</a></div>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LentiLab - Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #f2f5fb;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --glass-bg: rgba(255, 255, 255, 0.78);
+            --glass-border: rgba(255, 255, 255, 0.96);
+            --accent-color: #0ea5a4;
+        }
+        body {
+            margin: 0;
+            padding: 24px;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 18% 20%, rgba(14, 165, 164, 0.14), transparent 40%),
+                radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.12), transparent 45%),
+                linear-gradient(180deg, #f8fbff, #eef2f7);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.65;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+        .glass-container {
+            margin: 18px 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 34px 28px;
+            max-width: 860px;
+            width: 100%;
+            box-shadow: 0 16px 44px rgba(15, 23, 42, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1);
+        }
+        h1 { font-size: 34px; margin: 0; letter-spacing: -0.02em; }
+        .subtitle { margin-top: 8px; color: var(--text-secondary); font-size: 15px; }
+        .tag {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #0f766e;
+            background: rgba(20, 184, 166, 0.12);
+            border: 1px solid rgba(20, 184, 166, 0.25);
+            border-radius: 999px;
+            padding: 5px 10px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+            padding-bottom: 8px;
+        }
+        p, li { font-size: 15px; color: #374151; }
+        ul { padding-left: 20px; margin-top: 10px; }
+        .footer { margin-top: 34px; font-size: 13px; color: var(--text-secondary); }
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+        @media (max-width: 680px) {
+            body { padding: 12px; }
+            .glass-container { padding: 24px 18px; border-radius: 18px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>LentiLab Privacy Policy</h1>
+        <div class="subtitle">Effective Date: March 25, 2026</div>
+        <div class="tag">App Store Review Reference Ready (Guideline 5.1.1 + 5.1.2 + 5.2.1)</div>
+
+        <h2>1. Data Processing Overview</h2>
+        <p>
+            LentiLab is designed as a local-first creative app. Image processing, parameter tuning, preview generation,
+            and most rendering workflows are executed on-device within the app container.
+        </p>
+
+        <h2>2. Data We Process</h2>
+        <ul>
+            <li>User imported media files (images/videos selected by the user)</li>
+            <li>Project configuration data (effect parameters, card settings, layout choices)</li>
+            <li>Generated output assets (cards, previews, exported media selected by the user)</li>
+        </ul>
+        <p>
+            We do not intentionally collect personally identifiable information for independent server-side profiling.
+        </p>
+
+        <h2>3. Storage and Retention</h2>
+        <p>
+            Project and card data are stored in your app sandbox. Data remains available until deleted by user actions,
+            app removal, or system-level data cleanup.
+        </p>
+        <p>
+            If system backup/restore mechanisms are enabled on your Apple account, app data may be included according
+            to Apple platform behavior.
+        </p>
+
+        <h2>4. Sharing and Export</h2>
+        <p>
+            LentiLab does not auto-publish your content. Files are shared only when you explicitly trigger export or
+            share operations.
+        </p>
+
+        <h2>5. In-App Purchase and Apple Services</h2>
+        <p>
+            Purchase verification and entitlement status rely on Apple StoreKit/App Store infrastructure. Payment and
+            billing data are handled by Apple, not by independent LentiLab-operated payment servers.
+        </p>
+
+        <h2>6. Intellectual Property and Rights Statement</h2>
+        <p>
+            LentiLab product identity, UI assets, legal pages, and app implementation are independently created and
+            managed by the app publisher under the corresponding Apple Developer account.
+        </p>
+
+        <h2>7. Contact</h2>
+        <p>
+            For legal/privacy inquiries or App Review verification requests, use the App Store Connect review message
+            thread as the primary channel.
+        </p>
+        <p>
+            Repository reference: <a href="https://github.com/wberry9813/Policy-Portal">github.com/wberry9813/Policy-Portal</a>
+        </p>
+
+        <div class="footer">
+            &copy; 2026 LentiLab. All rights reserved.<br>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy-zh.html">中文隐私政策</a>
+            <a href="review-ownership.html">Ownership Statement (App Review)</a>
+            <a href="../index.html">Portal Home</a>
+        </div>
+    </div>
+</body>
+</html>
